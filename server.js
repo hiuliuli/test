@@ -204,5 +204,7 @@ function buildReply(rep, addr = '0.0.0.0', port = 0) {
 ========================== */
 
 tcpServer.listen(PORT, () => {
+  console.log(`username: ${USERNAME}`);
+  console.log(`password: ${PASSWORD}`);
   console.log(`SOCKS5 ${USE_TLS ? 'TLS' : ''} server running on ${PORT}`);
 });
